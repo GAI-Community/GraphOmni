@@ -1,6 +1,6 @@
 # 🧠 GraphOmni: A Comprehensive and Extendable Benchmark Framework for Large Language Models on Graph-theoretic Tasks
 
-[![arXiv](https://img.shields.io/badge/arXiv-2503.15661-b31b1b.svg)](https://arxiv.org/abs/2504.12764)
+[![arXiv](https://img.shields.io/badge/arXiv-2504.12764-b31b1b.svg)](https://arxiv.org/abs/2504.12764)
 [![Dataset](https://img.shields.io/badge/🤗%20Dataset-GraphOmni-yellow)](https://huggingface.co/datasets/G-A-I/GraphOmni)
 
 A benchmarking framework for evaluating large language models (LLMs) on fundamental graph reasoning tasks using a variety of synthetic graphs, prompt schemes, serialization formats, and difficulty settings.
