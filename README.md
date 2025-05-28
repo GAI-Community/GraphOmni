@@ -8,7 +8,8 @@
   <a href="" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Daily Papers-red"></a>  
 </p>
 
-A **benchmarking framework** for evaluating large language models (LLMs) on fundamental **graph reasoning tasks** under a vast range of settings.
+**GraphOmni** is a **comprehensive benchmark** designed to evaluate the graph reasoning capabilities of large language models (LLMs). It provides a modular, extensible framework covering a wide range of graph-theoretic tasks.
+![Overview](./overview.png)
 
 ---
 
@@ -17,39 +18,18 @@ A **benchmarking framework** for evaluating large language models (LLMs) on fund
 This project provides a **unified pipeline** to test LLMs' ability to solve graph algorithm problems. It supports a comprehensive coverage of **graph tasks**, **prompting strategies**, and **graph representations**. And it offers easy access to **extend them freely** based on users' need. 
 
 ---
-![Overview](./overview.png)
 
 ## 📋 Table of Contents
 
-- [🚀 Overview](#overview)
-- [✅ Supported Settings](#-supported-settings)
-- [📁 Data Structure](#-data-structure)
+- [🚀 Overview](#-overview)
 - [🛠️ Installation](#-installation)
 - [🔍 Answering and Evaluation](#-answering-and-evaluation)
+- [✅ Supported Settings](#-supported-settings)
+- [📁 Data Structure](#-data-structure)
 - [🔒 Closed-Source Model Evaluation](#-closed-source-model-evaluation)
 - [📜 Citation](#-citation)
 
 
-## ✅ Supported Settings
-
-- **Tasks**:  
-  `connectivity`, `bfsorder`, `triangle`, `diameter`, `cycle`, `shortest_path`, `all`
-
-- **Models**:  
-  `Llama3.1`, `Mistral`, `Phi-4`, `Qwen2.5`, `Qwen3-8B`, ... (easily extendable)
-
-- **Prompt Modes**:  
-  `Algorithm`, `CoT`, `k-shot`, `Instruct`, `none`, `0-CoT`, `0-Instruct`, `0-Algorithm`, `LTM`, ... (easily extendable)
-
-- **Serialization Formats**:  
-  `Graph Modelling Language`, `Adjacency Set`, `Edge Set`, `Edge List`, `Adjacency Matrix`, `Adjacency List`, `GraphML`, ... (easily extendable)
-
-- **Difficulty**:  
-  `easy`, `medium`, `hard`
-  
-![GRAPHOMNI Evaluation Pipeline](./pipeline_v2.png)
-
----
 
 ## 🛠️ Installation
 
@@ -63,40 +43,7 @@ Set environment variables:
 
 This project uses the python-dotenv library to manage environment variables. Please create a .env file to store sensitive information such as your Hugging Face token and OpenAI API key. These variables will be automatically loaded using load_dotenv().
 
-## 📁 Data Structure (available at [HF Repo](https://huggingface.co/datasets/G-A-I/GraphOmni))
-```
-└── query
-    ├── query_json 
-    │   ├── load_bfsorder.json
-        ├── load_connectivity.json
-    ...
-```
-The json file is a list of dictionaries, where each dictionary, contains the following information. 
-
-    name-id: Unique identifier for the query instance
-    
-    query: The full input query
-    
-    gt_answer: Ground-truth answer for the task
-    
-    model_response: Dictionary of model outputs (initially empty)
-    
-    prompt_type, task_type, serialization_type: Metadata describing the setup
-    
-    graph_info: Graph content in Adjacency Matrix format
-    
-    graph_type: Type or class of the graph
-    
-    graph_token: Number of tokens in serialized graph
-    
-    model_extract: Whether the model output contains an extractable answer (initially empty)
-    
-    model_acc: Whether the model's answer is correct (initially empty)
-    
-    difficulty: Difficulty level of the query
-
- 
-## 🔍 Anwsering and evaluation
+## 🔍 Answering and Evaluation
 If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Modes, Serialization Formats and Difficulty), you can simply run: (**It will load the dataset directly from the HF repo if you haven't done so**)
 
 ```
@@ -141,6 +88,7 @@ Each combination will be saved in the folder corresponding to `im_jsonfile`, and
 
 ### Output file
 Each output .json file contains a list of dictionaries, where each entry corresponds to a query instance. Example:
+
 ```
 [
     {
@@ -169,6 +117,62 @@ Each output .json file contains a list of dictionaries, where each entry corresp
     
 ]
 ```
+
+
+## ✅ Supported Settings
+
+- **Tasks**:  
+  `connectivity`, `bfsorder`, `triangle`, `diameter`, `cycle`, `shortest_path`, `all`
+
+- **Models**:  
+  `Llama3.1`, `Mistral`, `Phi-4`, `Qwen2.5`, `Qwen3-8B`, ... (easily extendable)
+
+- **Prompt Modes**:  
+  `Algorithm`, `CoT`, `k-shot`, `Instruct`, `none`, `0-CoT`, `0-Instruct`, `0-Algorithm`, `LTM`, ... (easily extendable)
+
+- **Serialization Formats**:  
+  `Graph Modelling Language`, `Adjacency Set`, `Edge Set`, `Edge List`, `Adjacency Matrix`, `Adjacency List`, `GraphML`, ... (easily extendable)
+
+- **Difficulty**:  
+  `easy`, `medium`, `hard`
+  
+![GRAPHOMNI Evaluation Pipeline](./pipeline_v2.png)
+
+---
+
+## 📁 Data Structure (available at [HF Repo](https://huggingface.co/datasets/G-A-I/GraphOmni))
+```
+└── query
+    ├── query_json 
+    │   ├── load_bfsorder.json
+        ├── load_connectivity.json
+    ...
+```
+The json file is a list of dictionaries, where each dictionary, contains the following information. 
+
+    name-id: Unique identifier for the query instance
+    
+    query: The full input query
+    
+    gt_answer: Ground-truth answer for the task
+    
+    model_response: Dictionary of model outputs (initially empty)
+    
+    prompt_type, task_type, serialization_type: Metadata describing the setup
+    
+    graph_info: Graph content in Adjacency Matrix format
+    
+    graph_type: Type or class of the graph
+    
+    graph_token: Number of tokens in serialized graph
+    
+    model_extract: Whether the model output contains an extractable answer (initially empty)
+    
+    model_acc: Whether the model's answer is correct (initially empty)
+    
+    difficulty: Difficulty level of the query
+
+ 
 
 
 ## 🔒 Closed-Source Model Evaluation
