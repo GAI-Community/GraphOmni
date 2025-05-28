@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2504.12764" target="_blank"><img src="https://img.shields.io/badge/arXiv-2505.21497-red"></a>
+  <a href="https://arxiv.org/abs/2504.12764" target="_blank"><img src="https://img.shields.io/badge/arXiv-2504.12764-red"></a>
   <a href="https://gai-community.github.io/Graph-Omni/" target="_blank"><img src="https://img.shields.io/badge/Project-Page-brightgreen"></a>
   <a href="https://huggingface.co/datasets/G-A-I/GraphOmni" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-orange"></a>
   <a href="" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Daily Papers-red"></a>  
