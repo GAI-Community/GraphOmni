@@ -21,13 +21,14 @@ This project provides a **unified pipeline** to test LLMs' ability to solve grap
 
 ## 📋 Table of Contents
 
-- [🚀 Overview](#-overview)
-- [✅ Supported Settings](#-supported-settings)
-- [📁 Data Structure](#-data-structure)
-- [🛠️ Installation](#️installation)
-- [🔍 Anwsering and evaluation](#-evaluation-pipeline)
-- [🔒 Closed-Source Model Evaluation](#-closed-source-model-evaluation)
-- [📜 Citation](#-citation)
+- [🚀 Overview](#overview)
+- [✅ Supported Settings](#supported-settings)
+- [📁 Data Structure](#data-structure)
+- [🛠️ Installation](#installation)
+- [🔍 Answering and Evaluation](#answering-and-evaluation)
+- [🔒 Closed-Source Model Evaluation](#closed-source-model-evaluation)
+- [📜 Citation](#citation)
+
 
 
 
@@ -97,7 +98,7 @@ The json file is a list of dictionaries, where each dictionary, contains the fol
     difficulty: Difficulty level of the query
 
  
-## 🔍 Anwsering and evaluation 
+## 🔍 Anwsering and evaluation
 If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Modes, Serialization Formats and Difficulty), you can simply run: (**It will load the dataset directly from the HF repo if you haven't done so**)
 
 ```
