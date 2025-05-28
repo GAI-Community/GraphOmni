@@ -17,7 +17,7 @@ A **benchmarking framework** for evaluating large language models (LLMs) on fund
 This project provides a **unified pipeline** to test LLMs' ability to solve graph algorithm problems. It supports a comprehensive coverage of **graph tasks**, **prompting strategies**, and **graph representations**. And it offers easy access to **extend them freely** based on users' need. 
 
 ---
-![Overview](./Overview.pdf)
+![Overview](./overview.png)
 
 
 ## ✅ Supported Settings
@@ -37,7 +37,7 @@ This project provides a **unified pipeline** to test LLMs' ability to solve grap
 - **Difficulty**:  
   `easy`, `medium`, `hard`
   
-![GRAPHOMNI Evaluation Pipeline](./pipeline_v2.pdf)
+![GRAPHOMNI Evaluation Pipeline](./pipeline_v2.png)
 
 ---
 
