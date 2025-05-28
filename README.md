@@ -179,3 +179,16 @@ Then use 'python main_closemodel.py --task all' to add the results and evaluate 
 
 Thank you can evaluate the results via the very first pipeline.
 
+Please kindly cite our paper if you find this project helpful.
+
+```bibtex
+@misc{xu2025graphomnicomprehensiveextendablebenchmark,
+      title={GraphOmni: A Comprehensive and Extendable Benchmark Framework for Large Language Models on Graph-theoretic Tasks}, 
+      author={Hao Xu and Xiangru Jian and Xinjian Zhao and Wei Pang and Chao Zhang and Suyuchen Wang and Qixin Zhang and Zhengyuan Dong and Joao Monteiro and Bang Liu and Qiuzhuang Sun and Tianshu Yu},
+      year={2025},
+      eprint={2504.12764},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2504.12764}, 
+} 
+```  
