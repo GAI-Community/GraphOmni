@@ -21,14 +21,11 @@ This project provides a **unified pipeline** to test LLMs' ability to solve grap
 
 ## 📋 Table of Contents
 
-- [🛠️ Installation](#️installation)
 - [🚀 Overview](#-overview)
 - [✅ Supported Settings](#-supported-settings)
 - [📁 Data Structure](#-data-structure)
-- [📦 Environment Setup](#-environment-setup)
-- [🔍 Evaluation Pipeline](#-evaluation-pipeline)
-  - [🎯 Evaluate Specific Configurations](#evaluate-specific-configurations)
-  - [📊 Output Format](#output-format)
+- [🛠️ Installation](#️installation)
+- [🔍 Anwsering and evaluation](#-evaluation-pipeline)
 - [🔒 Closed-Source Model Evaluation](#-closed-source-model-evaluation)
 - [📜 Citation](#-citation)
 
@@ -55,7 +52,7 @@ This project provides a **unified pipeline** to test LLMs' ability to solve grap
 
 ---
 
-## Environment Setup
+## 🛠️ Installation
 
 Install python packages
 
@@ -67,7 +64,7 @@ Set environment variables:
 
 This project uses the python-dotenv library to manage environment variables. Please create a .env file to store sensitive information such as your Hugging Face token and OpenAI API key. These variables will be automatically loaded using load_dotenv().
 
-## 📁 Data (available at [HF Repo](https://huggingface.co/datasets/G-A-I/GraphOmni))
+## 📁 Data Structure (available at [HF Repo](https://huggingface.co/datasets/G-A-I/GraphOmni))
 ```
 └── query
     ├── query_json 
@@ -77,30 +74,30 @@ This project uses the python-dotenv library to manage environment variables. Ple
 ```
 The json file is a list of dictionaries, where each dictionary, contains the following information. 
 
-name-id: Unique identifier for the query instance
-
-query: The full input query
-
-gt_answer: Ground-truth answer for the task
-
-model_response: Dictionary of model outputs (initially empty)
-
-prompt_type, task_type, serialization_type: Metadata describing the setup
-
-graph_info: Graph content in Adjacency Matrix format
-
-graph_type: Type or class of the graph
-
-graph_token: Number of tokens in serialized graph
-
-model_extract: Whether the model output contains an extractable answer (initially empty)
-
-model_acc: Whether the model's answer is correct (initially empty)
-
-difficulty: Difficulty level of the query
+    name-id: Unique identifier for the query instance
+    
+    query: The full input query
+    
+    gt_answer: Ground-truth answer for the task
+    
+    model_response: Dictionary of model outputs (initially empty)
+    
+    prompt_type, task_type, serialization_type: Metadata describing the setup
+    
+    graph_info: Graph content in Adjacency Matrix format
+    
+    graph_type: Type or class of the graph
+    
+    graph_token: Number of tokens in serialized graph
+    
+    model_extract: Whether the model output contains an extractable answer (initially empty)
+    
+    model_acc: Whether the model's answer is correct (initially empty)
+    
+    difficulty: Difficulty level of the query
 
  
-## Anwsering and evaluation 
+## 🔍 Anwsering and evaluation 
 If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Modes, Serialization Formats and Difficulty), you can simply run: (**It will load the dataset directly from the HF repo if you haven't done so**)
 
 ```
@@ -175,7 +172,7 @@ Each output .json file contains a list of dictionaries, where each entry corresp
 ```
 
 
-### 🔒 Closed-Source Model Evaluation
+## 🔒 Closed-Source Model Evaluation
 
 In our project, we used batchapi to evaluate some closed-sourced models. The pipeline is as follows:
 
@@ -203,6 +200,7 @@ Then use `python main_closemodel.py --task all` to add the results and evaluate 
 
 Thank you can evaluate the results via the very first pipeline.
 
+## 📜 Citation
 Please kindly cite our paper if you find this project helpful.
 
 ```bibtex
