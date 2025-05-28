@@ -1,15 +1,20 @@
 # 🧠 GraphOmni: A Comprehensive and Extendable Benchmark Framework for Large Language Models on Graph-theoretic Tasks
 
-[![arXiv](https://img.shields.io/badge/arXiv-2504.12764-b31b1b.svg)](https://arxiv.org/abs/2504.12764)
-[![Dataset](https://img.shields.io/badge/🤗%20Dataset-GraphOmni-yellow)](https://huggingface.co/datasets/G-A-I/GraphOmni)
 
-A benchmarking framework for evaluating large language models (LLMs) on fundamental graph reasoning tasks using a variety of synthetic graphs, prompt schemes, serialization formats, and difficulty settings.
+<p align="center">
+  <a href="https://arxiv.org/abs/2504.12764" target="_blank"><img src="https://img.shields.io/badge/arXiv-2505.21497-red"></a>
+  <a href="https://gai-community.github.io/Graph-Omni/" target="_blank"><img src="https://img.shields.io/badge/Project-Page-brightgreen"></a>
+  <a href="https://huggingface.co/datasets/G-A-I/GraphOmni" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-orange"></a>
+  <a href="" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Daily Papers-red"></a>  
+</p>
+
+A **benchmarking framework** for evaluating large language models (LLMs) on fundamental **graph reasoning tasks** under a vast range of settings.
 
 ---
 
 ## 🚀 Overview
 
-This project provides a unified pipeline to test LLMs' ability to solve graph algorithm problems. It supports multiple models, tasks, prompting strategies, and graph representations. Results are automatically saved and evaluated.
+This project provides a **unified pipeline** to test LLMs' ability to solve graph algorithm problems. It supports a comprehensive coverage of **graph tasks**, **prompting strategies**, and **graph representations**. And it offers easy access to **extend them freely** based on users' need. 
 
 ---
 
