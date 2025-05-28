@@ -22,14 +22,12 @@ This project provides a **unified pipeline** to test LLMs' ability to solve grap
 ## 📋 Table of Contents
 
 - [🚀 Overview](#overview)
-- [✅ Supported Settings](#supported-settings)
-- [📁 Data Structure](#data-structure)
-- [🛠️ Installation](#installation)
-- [🔍 Answering and Evaluation](#answering-and-evaluation)
-- [🔒 Closed-Source Model Evaluation](#closed-source-model-evaluation)
-- [📜 Citation](#citation)
-
-
+- [✅ Supported Settings](#-supported-settings)
+- [📁 Data Structure](#-data-structure)
+- [🛠️ Installation](#-installation)
+- [🔍 Answering and Evaluation](#-answering-and-evaluation)
+- [🔒 Closed-Source Model Evaluation](#-closed-source-model-evaluation)
+- [📜 Citation](#-citation)
 
 
 ## ✅ Supported Settings
