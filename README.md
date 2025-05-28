@@ -19,6 +19,20 @@ This project provides a **unified pipeline** to test LLMs' ability to solve grap
 ---
 ![Overview](./overview.png)
 
+## 📋 Table of Contents
+
+- [🛠️ Installation](#️installation)
+- [🚀 Overview](#-overview)
+- [✅ Supported Settings](#-supported-settings)
+- [📁 Data Structure](#-data-structure)
+- [📦 Environment Setup](#-environment-setup)
+- [🔍 Evaluation Pipeline](#-evaluation-pipeline)
+  - [🎯 Evaluate Specific Configurations](#evaluate-specific-configurations)
+  - [📊 Output Format](#output-format)
+- [🔒 Closed-Source Model Evaluation](#-closed-source-model-evaluation)
+- [📜 Citation](#-citation)
+
+
 
 ## ✅ Supported Settings
 
