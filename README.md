@@ -183,9 +183,9 @@ Results are saved in the following directories:
         ├── log
 ```
 
-The results will be in the './closedllm/openailog/content/'
+The results will be in the `./closedllm/openailog/content/`
 
-Then use 'python main_closemodel.py --task all' to add the results and evaluate the performance of the closed-source model.
+Then use `python main_closemodel.py --task all` to add the results and evaluate the performance of the closed-source model.
 
 Thank you can evaluate the results via the very first pipeline.
 
