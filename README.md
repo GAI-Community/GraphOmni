@@ -44,7 +44,7 @@ Set environment variables:
 This project uses the python-dotenv library to manage environment variables. Please create a `.env` file to store sensitive information such as your Hugging Face token and OpenAI API key. These variables will be automatically loaded using load_dotenv().
 
 ## 🔍 Answering and Evaluation
-If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Modes, Serialization Formats and Difficulty), you can simply run: (**It will load the dataset directly from the HF repo if you haven't done so**)
+If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Strategies, Serialization Formats and Difficulty), you can simply run: (**It will load the dataset directly from the HF repo if you haven't done so**)
 
 ```
 python main.py
