@@ -44,13 +44,13 @@ Set environment variables:
 This project uses the python-dotenv library to manage environment variables. Please create a `.env` file to store sensitive information such as your Hugging Face token and OpenAI API key. These variables will be automatically loaded using load_dotenv().
 
 ## 🔍 Answering and Evaluation
-If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Strategies, Serialization Formats and Difficulty), you can simply run: (**It will load the dataset directly from the HF repo if you haven't done so**)
+If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Strategies, Serialization Formats, and Difficulty), you can simply run: (**It will load the dataset directly from the HF repo if you haven't done so**)
 
 ```
 python main.py
 ```
 
-The default parameters are “Llama3.1”, “easy” “LTM”, “Adjacency Set”, “cycle”. 
+The default parameters are “Llama3.1”, “easy”, “LTM”, “Adjacency Set”, “cycle”. 
 
 To run an evaluation on a specific parameter combination (task, model, prompt, serialization format, difficulty), use: 
 
@@ -58,7 +58,7 @@ To run an evaluation on a specific parameter combination (task, model, prompt, s
 python main.py --model Llama3.1  --mode  easy --prompt LTM  --graph_representation  'Adjacency Set' --task  cycle
 ```
 
-Use --task all to evaluate all six tasks with a single model:, such as 
+Use --task all to evaluate all six tasks with a single model, such as 
 ```
 python main.py --model Llama3.1  --task  all
 ```
@@ -127,7 +127,7 @@ Each output .json file contains a list of dictionaries, where each entry corresp
 - **Models**:  
   `Llama3.1`, `Mistral`, `Phi-4`, `Qwen2.5`, `Qwen3-8B`, ... (easily extendable)
 
-- **Prompt Modes**:  
+- **Prompt Strategies**:  
   `Algorithm`, `CoT`, `k-shot`, `Instruct`, `none`, `0-CoT`, `0-Instruct`, `0-Algorithm`, `LTM`, ... (easily extendable)
 
 - **Serialization Formats**:  
@@ -179,7 +179,7 @@ The json file is a list of dictionaries, where each dictionary, contains the fol
 
 In our project, we used batchapi to evaluate some closed-sourced models. The pipeline is as follows:
 
-If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Modes, Serialization Formats and Difficulty), you can simply run  
+If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Modes, Serialization Formats, and Difficulty), you can simply run  
 ```
 python batchapi_openai_6tasks.py
 ```
