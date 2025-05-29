@@ -52,10 +52,10 @@ python main.py
 
 The default parameters are “Llama3.1”, “easy”, “LTM”, “Adjacency Set”, “cycle”. 
 
-To run an evaluation on a specific parameter combination (task, model, prompt, serialization format, difficulty), use: 
+To run an evaluation on a specific parameter combination (model, difficulty, prompt, serialization format, task), use: 
 
 ```
-python main.py --model Llama3.1  --mode  easy --prompt LTM  --graph_representation  'Adjacency Set' --task  cycle
+python main.py --model Llama3.1  --mode easy --prompt LTM  --graph_representation  'Adjacency Set' --task  cycle
 ```
 
 Use --task all to evaluate all six tasks with a single model, such as 
