@@ -5,7 +5,7 @@
   <a href="https://arxiv.org/abs/2504.12764" target="_blank"><img src="https://img.shields.io/badge/arXiv-2504.12764-red"></a>
   <a href="https://gai-community.github.io/Graph-Omni/" target="_blank"><img src="https://img.shields.io/badge/Project-Page-brightgreen"></a>
   <a href="https://huggingface.co/datasets/G-A-I/GraphOmni" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-orange"></a>
-  <a href="" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Daily Papers-red"></a>  
+  <a href="https://huggingface.co/papers/2504.12764" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Daily Papers-red"></a>  
 </p>
 
 **GraphOmni** is a **comprehensive benchmark** designed to evaluate the graph reasoning capabilities of large language models (LLMs). It provides a modular, extensible framework covering a wide range of graph-theoretic tasks.
