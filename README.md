@@ -55,12 +55,12 @@ The default parameters are “Llama3.1”, “easy”, “LTM”, “Adjacency S
 To run an evaluation on a specific parameter combination (model, difficulty, prompt, serialization format, task), use: 
 
 ```
-python main.py --model Llama3.1  --mode easy --prompt LTM  --graph_representation  'Adjacency Set' --task  cycle
+python main.py --model Llama3.1  --mode easy --prompt LTM  --graph_representation 'Adjacency Set' --task cycle
 ```
 
 Use --task all to evaluate all six tasks with a single model, such as 
 ```
-python main.py --model Llama3.1  --task  all
+python main.py --model Llama3.1  --task all
 ```
 
 Results are saved in the following directories:
@@ -164,7 +164,7 @@ The json file is a list of dictionaries, where each dictionary, contains the fol
     
     graph_type: Type or class of the graph
     
-    graph_token: Number of tokens in serialized graph
+    graph_token: Number of tokens in the serialized graph
     
     model_extract: Whether the model output contains an extractable answer (initially empty)
     
